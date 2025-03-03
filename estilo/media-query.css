@@ -49,6 +49,38 @@
         padding: 1rem;
     }
 
+    #burguer {
+        position: absolute;
+        top: 8.5rem;
+        left: 20rem;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: #0073b6;
+        color: white;
+        font-size: .8rem;
+        padding: 1rem;
+        margin-right: 2rem;
+        width: 80%;
+        transition: .3s;
+    }
+
+    nav ul li a:hover {
+        background: #00639c;
+    }
+
     /* CARROSSEL */
 
 .carousel-container {

@@ -25,3 +25,15 @@ function moveCarousel() {
 }
 
 setInterval(moveCarousel, 4000); // Troca a cada 3 segundos
+
+
+// MENU TOPO
+let burguer = document.getElementById('burguer')
+let menu = document.getElementById('menuAlto')
+function menuTopo() {
+    if (menu.style.display == 'block') {
+        menu.style.display == 'none'
+    } else {
+        menu.style.display = 'block'
+    }
+}
