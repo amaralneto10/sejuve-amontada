@@ -34,8 +34,8 @@
         width: 100%;
     }
 
-    .header #logo-sejuve img {
-        width: 6rem;
+    .header .logo img {
+        width: 10rem;
     }
 
     .fita-azul {
@@ -50,30 +50,42 @@
     }
 
     #burguer {
+        display: block;
         position: absolute;
-        top: 8.5rem;
-        left: 20rem;
+        top: 8rem;
+        left: 0;
         font-size: 2rem;
         cursor: pointer;
         z-index: 200;
+    }
+
+    #menuAlto {
+        display: none;
+    }
+
+    nav > #menuAlto {
+        padding: 2rem;
     }
 
     nav li {
         display: inline-block;
         width: 100%;
     }
+
+    #menuGeral {
+        display: none;
+    }
     
     nav ul li a {
-        display: none;
+        display: block;
         position: relative;
         top: 0;
-        left: 0;
+        right: 0;
         background: #0073b6;
         color: white;
         font-size: .8rem;
-        padding: 1rem;
         margin-right: 2rem;
-        width: 80%;
+        width: 100vw;
         transition: .3s;
     }
 
@@ -81,27 +93,110 @@
         background: #00639c;
     }
 
-    /* CARROSSEL */
 
-.carousel-container {
-    width: 100%;
-    max-width: 200px;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
+    /* SLIDE */
+    div.nav-manual, div.nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 82%;
+        display: flex;
+        justify-content: center;
+    }
+        /* SLIDE FIM */
+
+    /* dropdown */
+    .dropdown {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 2rem auto 0 auto;
+    }
+
+    .dropdown .botao-drop {
+        margin-top: 1rem;
+    }
+
+     /* dropdown FIM */
+
+     /* <!-- SECTION NOTÍCIA --> */
+
+
+.flex {
+    display: grid;
+    grid-template-columns: auto;
 }
-.carousel {
+
+h2.titulo {
+    font-size: 1rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00639c;
+}
+
+section.especiliadades {
+    padding: 40px 4%;
     display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
-.carousel img {
-    width: 100%;
-    height: auto;
+
+
+section.especiliadades .flex {
+    gap: 60px;
 }
+
+.especiliadades .especialidades-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box img {
+    width: 15rem;
+    border-radius: .5rem;
+}
+
+.especiliadades .especialidades-box video {
+    width: 15rem;
+    border-radius: .5rem;
+}
+
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #004d9970;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 2rem;
+    color: #00FF08;
+}
+
+.especiliadades .especialidades-box a {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   font-size: 1rem;
+   background: #004d99;
+   color: #00FF08;
+   width: 0;
+   margin-top: 1rem;
+   transition: .5s;
+}
+
+
+.especiliadades .especialidades-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+
+/* <!-- SECTION NOTÍCIA FIM --> */
     
-    
-    .inicio {
+    /* .inicio {
         background: white;
         width: 80%;
         margin: 0 auto 1rem auto;
@@ -134,7 +229,7 @@
         font-size: .9rem;
         font-weight: 600;
         margin: 1rem auto 0 auto;
-    }
+    } */
 
     /* FOOTER */
 

@@ -6,6 +6,9 @@
     <title>Sejuv Amontada</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="estilo/slide.css">
+    <link rel="stylesheet" href="estilo/janela-modal.css">
+    <link rel="stylesheet" href="estilo/cookies.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -50,69 +53,202 @@
     <!-- HEADER LOGOS -->
     <header class="header">
     <div class="logo">
-        <a href="#"><img src="imagens/Prancheta 1.png" alt="logo1"></a>
+        <a href="#"><img src="imagens/logo.png" alt="logo1"></a>
+        <a href="#"><img src="imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo2"></a>
     </div>
     </header>
 
                 <!-- MENU TOPO -->
     <div class="menu">
-        <i id="burguer" class='bx bx-menu' onclick="menuTopo()"></i>
+        <i onclick="abrirMenu()" id="burguer" class='bx bx-menu'></i>
     </div>
 
     <div class="fita-azul">
 
-        <nav id="menuAlto">
-            <!-- <h1>INSCRIÇÕES ABERTAS PARA OS JOGOS ESCOLARES 2025</h1> -->
+        <nav id="menuGeral">
             <ul>
                 <li>
                     <abbr title="Inicio"><a href="#"><i class='bx bxs-home-alt-2'></i></a></abbr>
                 </li>
     
                 <li>
-                    <a href="noticias/noticias.html">Noticias</a>
+                    <a href="#especiliadades">Noticias</a>
                 </li>
-    
-                <!-- <li class="menu">
-                    <a href="#">Setores<i class='bx bx-chevron-down'></i></a>
-    
-                    <div class="menu-lista">
-                        <a href="https://cadastrounicoamontada.github.io/cadastro-unico-amontada/">Cadastro Único</a>
-                        <a href="setores/cras-sede.html">Cras Sede</a>
-                        <a href="setores/cras-praiano.html">Cras Praiano</a>
-                        <a href="setores/creas.html">Creas</a>
-                        <a href="setores/cozinha-comunitaria.html">Cozinha Comunitária</a>
-                        <a href="setores/casa-do-cidadao.html">Casa do Cidadão</a>
-                    </div>
-                </li> -->
+
     
                 <li>
-                    <a href="acoes da secretaria/acoes.html">Ações da Secretaria</a>
+                    <a href="Acoes da Secretaria/acoes-da-secretaria.html">Ações da Secretaria</a>
+                </li>
+
+                <li>
+                    <a href="Galeria dos Campeões/galeria-dos-campeoes.html">Galeria do Campeões</a>
                 </li>
             </ul>
         </nav>
     </div>
 
-    <!-- CARROSSEL -->
-     
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="imagens/LOGO-SEJUVE-removebg-preview.png" alt="Imagem 1">
-            <img src="imagens/LOGO-SEJUVE-removebg-preview.png" alt="Imagem 2">
-            <img src="imagens/LOGO-SEJUVE-removebg-preview.png" alt="Imagem 3">
-        </div>
+    <div class="menuAlto">
+        <nav id="menuAlto">
+            <ul>
+                <li>
+                    <abbr title="Inicio"><a href="#"><i class='bx bxs-home-alt-2'></i></a></abbr>
+                </li>
+    
+                <li>
+                    <a href="#especiliadades">Noticias</a>
+                </li>
+
+    
+                <li>
+                    <a href="Acoes da Secretaria/acoes-da-secretaria.html">Ações da Secretaria</a>
+                </li>
+
+                <li>
+                    <a href="Galeria dos Campeões/galeria-dos-campeoes.html">Galeria do Campeões</a>
+                </li>
+            </ul>
+        </nav>
     </div>
+
+
+    <!-- SECTION SLIDE -->
+    <section class="slider">
+        <div class="slider-content">
+            
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imagens/slide-sejuve-G.png" alt="slide 1">
+                <img class="img-mobile" src="imagens/slide-sejuve-P.png" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="imagens/slide-sejuve-G.png" alt="slide 3">
+                <img class="img-mobile" src="imagens/slide-sejuve-P.png" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="imagens/slide-sejuve-G.png" alt="slide 3">
+                <img class="img-mobile" src="imagens/slide-sejuve-P.png" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- SECTION SLIDE FIM -->
+    
+        <!-- SECTION DROPDOWN -->
+        <section class="dropdown">
+            <!-- SECRETÁRIO -->
+                <div onclick="openModal2()" class="botao-drop"><i class='bx bxs-user'></i><span>Secretário</span></div>
+
+                <div id="modal-container2" class="modal-container2">
+                    <div class="modal2">
+                        <button class="fechar2" id="fechar2">X</button>
+                        <h1>Mateus Amaral</h1>
+                        <p>Seja bem-vindo ao site oficial da Secretaria Municipal de Juventude e Esporte, Qualquer dúvida nos contate através de nossas redes social no topo do site.</p>
+                    </div>
+                </div>
+
+                      <!-- SECRETÁRIO -->
+                      <div onclick="openModal2()" class="botao-drop"><i class='bx bxs-user'></i><span>Secretário</span></div>
+
+                      <div id="modal-container" class="modal-container">
+                          <div class="modal">
+                              <button class="fechar" id="fechar">X</button>
+                              <h1>Secretaria Municipal de Juventude e Esporte</h1>
+                              <p>Seja bem-vindo ao site oficial da Secretaria Municipal de Juventude e Esporte, Qualquer dúvida nos contate através de nossas redes social no topo do site.</p>
+                          </div>
+                      </div>
+
+                            <!-- SECRETÁRIO -->
+                <div onclick="openModal2()" class="botao-drop"><i class='bx bxs-user'></i><span>Secretário</span></div>
+
+                <div id="modal-container" class="modal-container">
+                    <div class="modal">
+                        <button class="fechar" id="fechar">X</button>
+                        <h1>Secretaria Municipal de Juventude e Esporte</h1>
+                        <p>Seja bem-vindo ao site oficial da Secretaria Municipal de Juventude e Esporte, Qualquer dúvida nos contate através de nossas redes social no topo do site.</p>
+                    </div>
+                </div>
+
+                      <!-- SECRETÁRIO -->
+                      <div onclick="openModal2()" class="botao-drop"><i class='bx bxs-user'></i><span>Secretário</span></div>
+
+                      <div id="modal-container" class="modal-container">
+                          <div class="modal">
+                              <button class="fechar" id="fechar">X</button>
+                              <h1>Secretaria Municipal de Juventude e Esporte</h1>
+                              <p>Seja bem-vindo ao site oficial da Secretaria Municipal de Juventude e Esporte, Qualquer dúvida nos contate através de nossas redes social no topo do site.</p>
+                          </div>
+                      </div>
+        </section>
+        <!-- SECTION DROPDOWN FIM -->
+
+    <!-- SECTION NOTÍCIA -->
+    <section class="especiliadades" id="especiliadades">
+        <div class="interface">
+            <h2 class="titulo">NOSSAS <span>NOTÍCIAS</span></h2>
+            <div class="flex">
+                <div class="especialidades-box">
+                    <img src="imagens/foto-1.jpg" alt="">
+                    <h3>Prêmio Para os Jovens Destaques</h3>
+                    <p>Secretário Mateus Amaral, Juntamente com o Excelentíssimo Prefeito Flavio Filho e Vice Paulo Cesar, e também o Secretáriado, Entregou Troféus Simbolícos aos Jovens Destaques em Nosso Município.</p>
+
+                    <a href="noticias/noticia1.html"><i class='bx bx-link-alt'></i> Confira</a>
+                </div><!--especialidades-box-->
+
+                <div class="especialidades-box">
+                    <img src="imagens/ACOES DA SECRETARIA/ACAO-PREFEITURAXCAMARA.jpg" alt="">
+                    <h3>Tradicional Amistoso Preeitura x Camâra Municipal</h3>
+                    <p>Paloma e Eric Foram os Campeões da Categoria Misto no Beach Tennis Organizado Pela Secretaria Municipal de Juventude e Esporte em Conjunto a Prefeitura Municipal.</p>
+
+                    <a href="#"><i class='bx bx-link-alt'></i> Confira</a>
+                </div><!--especialidades-box-->
+                
+                <div class="especialidades-box">
+                    <img src="imagens/Beach Tennis/BT-MISTO-CAMPEÃO.jpg" alt="">
+                    <h3>Campeão Misto Beach Tennis</h3>
+                    <p>Paloma e Eric Foram os Campeões da Categoria Misto no Beach Tennis Organizado Pela Secretaria Municipal de Juventude e Esporte em Conjunto a Prefeitura Municipal.</p>
+
+                    <a href="#"><i class='bx bx-link-alt'></i> Confira</a>
+                </div><!--especialidades-box-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--especiliadades-->
+
+        <!-- SECTION NOTÍCIA FIM -->
     
 
-    <!-- SECTION -->
+    <!-- SECTION JANELA MODAL -->
     <section class="inicio" id="inicio">
-        <div class="inscricao">
-            <img src="imagens/foto-1.jpg" alt="">
-            <h1>Jogos Escolares - 2025</h1>
-            <p>Estão Abertas às Inscrições Para os Jogos Escolares 2025.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSchYNHAn2nxk04MPxS7UA746I4rtAjbTfj4EvHA4K3c_e0BiQ/viewform?usp=dialog">Faça Sua Inscrição</a>
+
+        <div onclick="openModal()" class="botao"><i class='bx bxs-info-circle'></i></div>
+
+        <div id="modal-container" class="modal-container">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Secretaria Municipal de Juventude e Esporte</h1>
+                <p>Seja bem-vindo ao site oficial da Secretaria Municipal de Juventude e Esporte, Qualquer dúvida nos contate através de nossas redes social no topo do site.</p>
+            </div>
         </div>
 
     </section>
+      <!-- SECTION JANELA MODAL FIM -->
 
     <!-- iframe do mapa -->
      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31863.50588824733!2d-39.822950399999996!3d-3.3652736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1spt-BR!2sbr!4v1739911096115!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
@@ -154,6 +290,17 @@
     <div class="autor">
         <p>&copy; 2025 <a href="https://www.instagram.com/amaralneto18/" target="_blank">Amaral Neto</a> - Todos os direitos reservados</p>
     </div>
+
+
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>O Portal da Secretaria Municipal de Juventude e Esporte utiliza cookies para melhorar a sua experiência, de acordo com a nossa Política de Privacidade, ao continuar navegando, você concorda com estas condições.</p>
+
+            <div class="cookies-btn">
+                <button onclick="aceito()">Aceito</button>
+            </div>
+        </div>
+    </div><!--cookies-msg-->
 
     <script src="js/script.js"></script>
 </body>

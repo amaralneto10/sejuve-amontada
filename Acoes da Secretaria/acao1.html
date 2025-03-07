@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejuv Amontada</title>
+    <link rel="stylesheet" href="../noticias/noticias.css">
+
+    <link rel="stylesheet" href="../estilo/media-query.css">
+    <link rel="stylesheet" href="../estilo/cookies.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- LINKS NO TOPO -->
+    <div class="link-topo">
+        <a href="#">
+            <p>Secretaria de Juventude e Esporte</p>
+        </a>
+
+        <a href="#">
+            <h3>SEJUVE</h3>
+        </a>
+        <div class="btn-topo">
+            <ul>
+                <li>
+                    <!-- <abbr title="Ouvidoria"><a href="https://www.instagram.com/saps_amontada/"><i class='bx bx-support'>  Ouvidoria</i></a></abbr> -->
+
+                    <abbr title="WhatsApp">
+                        <a class="btn" href="https://wa.me/5588981233445
+                        "><i class='bx bxl-whatsapp'></i></a>
+                    </abbr>
+                    
+                    <abbr title="Instagram"><a class="btn" href="https://www.instagram.com/sejuveamontada/" target="_blank"><i class='bx bxl-instagram'></i></a></abbr>
+
+                    <abbr title="Facebook"><a class="btn" href="https://www.facebook.com/sejuve.amontada.7/" target="_blank"><i class='bx bxl-facebook-circle' ></i></a></abbr>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- FITA COLORIDA -->
+    <div class="fita-topo">
+        <div class="fita1"></div>
+        <div class="fita2"></div>
+        <div class="fita3"></div>
+        <div class="fita4"></div>
+        <div class="fita5"></div>
+    </div>
+
+    <!-- HEADER LOGOS -->
+    <header class="header">
+    <div class="logo">
+        <a href="#"><img src="../imagens/logo.png" alt="logo1"></a>
+        <a href="#"><img src="../imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo1"></a>
+    </div>
+    </header>
+
+                <!-- MENU TOPO -->
+    <div class="menu">
+        <i id="burguer" class='bx bx-menu' onclick="menuTopo()"></i>
+    </div>
+
+    <div class="fita-azul">
+
+        <nav id="menuAlto">
+            <ul>
+                <li>
+                    <abbr title="Inicio"><a href="../index.html"><i class='bx bxs-home-alt-2'></i></a></abbr>
+                </li>
+
+                <li>
+                    <a href="../index.html">Notícia</a>
+                </li>
+
+                <li>
+                    <a href="../Acoes da Secretaria/acoes-da-secretaria.html">Ações da Secretaria</a>
+                </li>
+
+                <li>
+                    <a href="../Galeria dos Campeões/galeria-dos-campeoes.html">Galeria do Campeões</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<!-- SECTION NOTICIA -->
+<section class="inicio" id="inicio">
+    <h1>NOSSO AMO RUN PEDAL FOI UM SUCESSO</h1>
+    <i class='bx bxs-user'> Amaral Neto</i>
+    <i class='bx bxs-calendar' > 14-02-2025</i>
+
+    <img src="../imagens/Corrida 5km/pqcaio.jpg" alt="1">
+    <p>Um momento histórico e marcante para o esporte em Amontada! Nosso Amo Run Pedal foi um Sucesso, e a Secretaria Municipal de Juventude e Esporte Reafirma seu Compromisso com os Esportistas do Nosso Município.</p>
+    <p>Agradecimento ao apoio do prefeito Flavio Filho e de toda equipe da SEJUVE! Continuaremos lutando pela democratização do Esporte em nosso município.</p>
+    <p>Obrigado a todos os participantes!</p>
+
+    <div id="noticias" class="img-noticia">
+        <a href="#imagem-grande1"><video src="../imagens/Corrida 5km/CORRIDA5KM-2.mp4"></video></a>
+        <a href="#imagem-grande2"><video src="../imagens/Corrida 5km/CORRIDA5KM-3.mp4"></video></a>
+        <a href="#imagem-grande3"><video src="../imagens/Corrida 5km/CORRIDA5KM-4.mp4"></video></a>
+    </div>
+
+    
+<!-- Modal usando target -->
+ <!-- IMAGEM 1 -->
+<div id="imagem-grande1" class="modal">
+    <a href="#noticias" class="close">&times;</a>
+    <video controls loop src="../imagens/Corrida 5km/CORRIDA5KM-2.mp4"></video>
+</div>
+ <!-- IMAGEM 2 -->
+<div id="imagem-grande2" class="modal">
+    <a href="#noticias" class="close">&times;</a>
+    <video controls loop src="../imagens/Corrida 5km/CORRIDA5KM-3.mp4">
+</div>
+   <!-- IMAGEM 3 -->
+   <div id="imagem-grande3" class="modal">
+    <a href="#noticias" class="close">&times;</a>
+    <video controls loop src="../imagens/Corrida 5km/CORRIDA5KM-4.mp4">
+</div>
+   <!-- IMAGEM 4 -->
+   <div id="imagem-grande4" class="modal">
+    <a href="#noticias" class="close">&times;</a>
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-4.jpg" alt="Imagem Ampliada">
+</div>
+   <!-- IMAGEM 5 -->
+   <div id="imagem-grande5" class="modal">
+    <a href="#noticias" class="close">&times;</a>
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-5.jpg" alt="Imagem Ampliada">
+</div>
+</section>
+
+<!-- SECTION NOTICIA FIM-->
+
+
+    <!-- iframe do mapa -->
+     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31863.50588824733!2d-39.822950399999996!3d-3.3652736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1spt-BR!2sbr!4v1739911096115!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+
+    <div class="fita-baixa">
+        <div class="fita1"></div>
+        <div class="fita2"></div>
+        <div class="fita3"></div>
+        <div class="fita4"></div>
+        <div class="fita5"></div>
+    </div>
+    <footer>
+        <div class="institucional">
+            <p><strong>Institucional</strong></p>
+            
+            <i class='bx bxs-user-circle' > Secretário: Mateus Henrique Amaral de Sousa
+            </i>
+            <i class='bx bxs-credit-card-front'> CNPJ: 42.399.307/0001-57</i>
+        </div>
+        <div class="contatos">
+            <p><strong>Contatos</strong></p>
+            
+            <i class='bx bxs-phone'> (88) 9.8123-3445</i>
+          
+            <i class='bx bxs-envelope'> sejuveamontada@gmail.com</i>
+            <h3></h3>
+        </div>
+        <div class="endereco">
+            <p><strong>Endereço e Horário</strong></p>
+            
+            <i class='bx bx-home'> AV. Jaime Assis Henrique, Nº 150 - Centro - CEP: 62.540-000
+
+            </i>
+            
+            <i class='bx bxs-alarm'> Segunda a Sexta - 8h às 14h</i>
+        </div>
+    </footer>
+
+    <div class="autor">
+        <p>&copy; 2025 <a href="https://www.instagram.com/amaralneto18/" target="_blank">Amaral Neto</a> - Todos os direitos reservados</p>
+    </div>
+
+
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>O Portal da Secretaria Municipal de Juventude e Esporte utiliza cookies para melhorar a sua experiência, de acordo com a nossa Política de Privacidade, ao continuar navegando, você concorda com estas condições.</p>
+
+            <div class="cookies-btn">
+                <button onclick="aceito()">Aceito</button>
+            </div>
+        </div>
+    </div><!--cookies-msg-->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
