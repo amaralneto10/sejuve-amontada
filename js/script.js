@@ -79,17 +79,48 @@ if(localStorage.lgpd == 'sim'){
 
 
 // MENU ABRIR E FECHAR
-const menuBurguer = document.getElementById('burguer')
+// const menuBurguer = document.getElementById('burguer')
 
-const menuLista = document.getElementById('menuAlto')
+// const menuLista = document.getElementById('menuAlto')
 
-function abrirMenu() {
-    if (menuLista.style.display === 'block') {
-        menuLista.style.display = 'none'
-    } else {
-        menuLista.style.display = 'block'
-    }
-}
+
+
+// function abrirMenu() {
+//     if (menuLista.style.display === 'block') {
+//         menuLista.style.display = 'none'
+//     } else {
+//         menuLista.style.display = 'block'
+//     }
+// }
+
+    // Função para abrir o menu
+    function abrirMenu() {
+        document.getElementById("menu-lateral").classList.add("open");
+        document.getElementById("conteudo").style.marginLeft = "250px"; // Empurrar o conteúdo para a direita
+      }
+  
+      // Função para fechar o menu
+      function fecharMenu() {
+        document.getElementById("menu-lateral").classList.remove("open");
+        document.getElementById("conteudo").style.marginLeft = "0"; // Retornar o conteúdo para a posição original
+      }
+  
+      // Função chamada quando um item do menu é clicado
+      function itemClicado() {
+        fecharMenu();
+      }
+  
+      // Fechar o menu quando clicar fora dele
+      document.addEventListener('click', function(event) {
+        var menu = document.getElementById("menu-lateral");
+        var btn = document.querySelector('.abrir-btn');
+        
+        // Verifica se o clique foi fora do menu e do botão de abrir
+        if (!menu.contains(event.target) && !btn.contains(event.target)) {
+          fecharMenu();
+        }
+      });
 
 
 // MENU ABRIR E FECHAR FIM
+
