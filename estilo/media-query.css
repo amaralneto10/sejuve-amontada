@@ -6,6 +6,7 @@
     .link-topo > a h3 {
         color: white;
         display: block;
+        font-size: 1rem;
     }
 
     .link-topo a i {
@@ -38,6 +39,10 @@
         width: 10rem;
     }
 
+    #logo2 img {
+        display: none;
+    }
+
     .fita-azul {
         position: relative;
         top: -.2rem;
@@ -51,9 +56,9 @@
 
     #burguer {
         display: block;
-        position: absolute;
-        top: 8rem;
-        left: 20rem;
+        position: relative;
+        top: 0;
+        left: 1rem;
         font-size: 2rem;
         cursor: pointer;
         z-index: 200;
@@ -152,7 +157,7 @@
     div.nav-manual, div.nav-auto{
         position: absolute;
         width: 100%;
-        margin-top: 58%;
+        margin-top: 46%;
         display: flex;
         justify-content: center;
     }
@@ -167,6 +172,7 @@
 
     .dropdown .botao-drop {
         margin-top: 1rem;
+        font-size: 1rem;
     }
 
     .botao-drop:hover {
@@ -185,7 +191,7 @@
 }
 
 h2.titulo {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -198,6 +204,7 @@ section.especiliadades {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem auto 0 auto;
 }
 
 
