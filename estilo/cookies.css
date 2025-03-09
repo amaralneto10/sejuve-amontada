@@ -53,3 +53,56 @@
 .cookies-msg .cookies-btn button:hover{
     transform: scale(0.9);
 }
+
+@media screen and (max-width: 600px) {
+    .cookies-msg{
+        width: 98%;
+        background-color: #fff;
+        position: fixed;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 15px;
+        display: none;
+    }
+    
+    .cookies-msg.mostrar{
+        display: block;
+        z-index: 10;
+    }
+    
+    .cookies-msg .cookies-txt{
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        background: #02569C;
+        border-radius: .5rem;
+    }
+    
+    .cookies-msg .cookies-txt p {
+        color: white;
+        font-size: .7rem;
+        font-weight: 400;
+    }
+    
+    .cookies-msg .cookies-btn{
+        margin-left: 30px;
+    }
+    
+    .cookies-msg .cookies-btn button{
+        background-color: #02569C;
+        color: #fff;
+        border: 3px solid white;
+        border-radius: .5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .cookies-msg .cookies-btn button:hover{
+        transform: scale(0.9);
+    }
+}
