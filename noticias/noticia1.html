@@ -52,19 +52,21 @@
     <!-- HEADER LOGOS -->
     <header class="header">
     <div class="logo">
-        <a href="#"><img src="../imagens/logo.png" alt="logo1"></a>
-        <a href="#"><img src="../imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo1"></a>
+        <a href="../index.html"><img src="../imagens/logo.png" alt="logo1"></a>
+        <a id="logo2" href="#"><img src="../imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo1"></a>
+
+        
+                <!-- MENU TOPO -->
+    <div class="menu">
+        <i id="burguer" class='bx bx-menu' onclick="abrirMenu()"></i>
+    </div>
     </div>
     </header>
 
-                <!-- MENU TOPO -->
-    <div class="menu">
-        <i id="burguer" class='bx bx-menu' onclick="menuTopo()"></i>
-    </div>
 
     <div class="fita-azul">
 
-        <nav id="menuAlto">
+        <nav id="menuGeral">
             <ul>
                 <li>
                     <abbr title="Inicio"><a href="../index.html"><i class='bx bxs-home-alt-2'></i></a></abbr>
@@ -80,6 +82,17 @@
             </ul>
         </nav>
     </div>
+
+        <!-- MENU MOBILE -->
+        <div id="menu-lateral">
+            <a id="x" href="javascript:void(0)" onclick="itemClicado()">X</a>
+            <a href="../index.html" onclick="itemClicado()"><i class='bx bxs-home-alt-2'></i></a>
+            <a href="../index.html" onclick="itemClicado()">Notícias</a>
+            <a href="../Acoes da Secretaria/acoes-da-secretaria.html" onclick="itemClicado()">Ações da Secretaria</a>
+            <a href="../Galeria dos Campeões/galeria-dos-campeoes.html" onclick="itemClicado()">Galeria dos Campeões</a>
+          </div>
+
+    
 <!-- SECTION NOTICIA -->
 <section class="inicio" id="inicio">
     <h1>Agaci e Galber Conquistam o Troféu de Campeões Masculino de Beach Tennis</h1>
@@ -267,6 +280,6 @@
         </div>
     </div><!--cookies-msg-->
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
