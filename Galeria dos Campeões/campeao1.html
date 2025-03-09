@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejuv Amontada</title>
-    <link rel="stylesheet" href="noticias.css">
+    <link rel="stylesheet" href="campeao.css">
 
     <link rel="stylesheet" href="../estilo/media-query.css">
     <link rel="stylesheet" href="../estilo/cookies.css">
@@ -52,30 +52,28 @@
     <!-- HEADER LOGOS -->
     <header class="header">
     <div class="logo">
-        <a href="#"><img src="../imagens/logo.png" alt="logo1"></a>
-        <a href="#"><img src="../imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo1"></a>
+        <a href="../index.html"><img src="../imagens/logo.png" alt="logo1"></a>
+        <a id="logo2" href="#"><img src="../imagens/Black_White_Yellow_Simple_Initial_Name_Logo-removebg-preview.png" alt="logo1"></a>
+
+        
+                <!-- MENU TOPO -->
+    <div class="menu">
+        <i id="burguer" class='bx bx-menu' onclick="abrirMenu()"></i>
+    </div>
+
     </div>
     </header>
 
-                <!-- MENU TOPO -->
-    <div class="menu">
-        <i id="burguer" class='bx bx-menu' onclick="menuTopo()"></i>
-    </div>
-
     <div class="fita-azul">
 
-        <nav id="menuAlto">
+        <nav id="menuGeral">
             <ul>
                 <li>
                     <abbr title="Inicio"><a href="../index.html"><i class='bx bxs-home-alt-2'></i></a></abbr>
                 </li>
 
                 <li>
-                    <a href="../index.html">Noticias</a>
-                </li>
-
-                <li>
-                    <a href="#">Ações da Secretaria</a>
+                    <a href="../Acoes da Secretaria/acoes-da-secretaria.html">Ações da Secretaria</a>
                 </li>
 
                 <li>
@@ -84,23 +82,34 @@
             </ul>
         </nav>
     </div>
+
+          <!-- MENU MOBILE -->
+          <div id="menu-lateral">
+            <a id="x" href="javascript:void(0)" onclick="itemClicado()">X</a>
+            <a href="../index.html" onclick="itemClicado()"><i class='bx bxs-home-alt-2'></i></a>
+            <a href="../index.html" onclick="itemClicado()">Notícias</a>
+            <a href="../Acoes da Secretaria/acoes-da-secretaria.html" onclick="itemClicado()">Ações da Secretaria</a>
+            <a href="../Galeria dos Campeões/galeria-dos-campeoes.html" onclick="itemClicado()">Galeria dos Campeões</a>
+          </div>
+
+
 <!-- SECTION NOTICIA -->
 <section class="inicio" id="inicio">
-    <h1>Equipe de Aracatiara Conquista o Troféu de Campeão MAsculino Aberto de Futsal</h1>
+    <h1>Agaci e Galber Conquistam o Troféu de Campeões Masculino de Beach Tennis</h1>
     <i class='bx bxs-user'> Amaral Neto</i>
     <i class='bx bxs-calendar' > 14-02-2025</i>
 
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-2.jpg" alt="1">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-6.jpg" alt="1">
     <p>A Prefeitura de Amontada, por meio da Secretaria Municipal de Assistência e Proteção Social, promoveu, no último dia 4, um importante momento de esclarecimento com os novos beneficiários do Cartão Mais Infância. O encontro aconteceu no auditório do CRAS Sede e foi marcado por diálogos produtivos e orientações fundamentais sobre o benefício.</p>
     <p>Na ocasião, foram repassadas informações detalhadas sobre a utilização do Cartão Mais Infância, seus objetivos e a importância desse auxílio para promover melhores condições de vida às famílias em situação de vulnerabilidade social. Além disso, os participantes tiveram a oportunidade de esclarecer dúvidas e entender como o programa pode contribuir para o fortalecimento das políticas públicas voltadas à infância e à redução das desigualdades sociais.</p>
     <p>A Prefeitura de Amontada reforça seu compromisso em garantir que as famílias mais necessitadas tenham acesso a direitos e oportunidades que proporcionem dignidade e qualidade de vida, reafirmando que ações como essa são essenciais para construir um futuro mais justo e igualitário para todos.</p>
 
     <div id="noticias" class="img-noticia">
-        <a href="#imagem-grande1"><img src="../imagens/FUTSAL/ARACATIARA-ABERTO-2.jpg" alt="1"></a>
-        <a href="#imagem-grande2"><img src="../imagens/FUTSAL/ARACATIARA-ABERTO-3.jpg" alt="2"></a>
-        <a href="#imagem-grande3"><img src="../imagens/FUTSAL/ARACATIARA-ABERTO-4.jpg" alt="3"></a>
-        <a href="#imagem-grande4"><img src="../imagens/FUTSAL/ARACATIARA-ABERTO-5.jpg" alt="4"></a>
-        <a href="#imagem-grande5"><img src="../imagens/FUTSAL/ARACATIARA-ABERTO-6.jpg" alt="5"></a>
+        <a href="#imagem-grande1"><img src="../imagens/Beach Tennis/BT-M-CAMPEAO.jpg" alt="1"></a>
+        <a href="#imagem-grande2"><img src="../imagens/Beach Tennis/BT-M-CAMPEAO-2.jpg" alt="2"></a>
+        <a href="#imagem-grande3"><img src="../imagens/Beach Tennis/BT-M-CAMPEAO-3.jpg" alt="3"></a>
+        <a href="#imagem-grande4"><img src="../imagens/Beach Tennis/BT-M-CAMPEAO-4.jpg" alt="4"></a>
+        <a href="#imagem-grande5"><img src="../imagens/Beach Tennis/BT-M-CAMPEAO-5.jpg" alt="5"></a>
     </div>
 
     
@@ -108,27 +117,27 @@
  <!-- IMAGEM 1 -->
 <div id="imagem-grande1" class="modal">
     <a href="#noticias" class="close">&times;</a>
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-2.jpg" alt="Imagem Ampliada">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO.jpg" alt="Imagem Ampliada">
 </div>
  <!-- IMAGEM 2 -->
 <div id="imagem-grande2" class="modal">
     <a href="#noticias" class="close">&times;</a>
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-3.jpg" alt="Imagem Ampliada">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-2.jpg" alt="Imagem Ampliada">
 </div>
    <!-- IMAGEM 3 -->
    <div id="imagem-grande3" class="modal">
     <a href="#noticias" class="close">&times;</a>
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-4.jpg" alt="Imagem Ampliada">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-3.jpg" alt="Imagem Ampliada">
 </div>
    <!-- IMAGEM 4 -->
    <div id="imagem-grande4" class="modal">
     <a href="#noticias" class="close">&times;</a>
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-5.jpg" alt="Imagem Ampliada">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-4.jpg" alt="Imagem Ampliada">
 </div>
    <!-- IMAGEM 5 -->
    <div id="imagem-grande5" class="modal">
     <a href="#noticias" class="close">&times;</a>
-    <img src="../imagens/FUTSAL/ARACATIARA-ABERTO-6.jpg" alt="Imagem Ampliada">
+    <img src="../imagens/Beach Tennis/BT-M-CAMPEAO-5.jpg" alt="Imagem Ampliada">
 </div>
 </section>
 
@@ -187,6 +196,6 @@
         </div>
     </div><!--cookies-msg-->
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

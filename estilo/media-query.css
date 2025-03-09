@@ -157,7 +157,7 @@
         left: 0;
         text-align: center;
         color: var(--cor5);
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .titulo-dropdown span {
@@ -166,7 +166,7 @@
 
     .dropdown .botao-drop {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     .botao-drop:hover {
@@ -232,7 +232,7 @@
 }
 
 h2.titulo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -514,8 +514,22 @@ footer {
         margin: 2rem auto 0 auto;
     }
 
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 3rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.1rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
     .dropdown .botao-drop {
         margin-top: 1rem;
+        font-size: 1rem;
     }
 
     .botao-drop:hover {
@@ -534,7 +548,7 @@ footer {
 }
 
 h2.titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -564,7 +578,7 @@ section.especiliadades .flex {
 }
 
 .especiliadades .especialidades-box img {
-    width: 20rem;
+    width: 17rem;
     border-radius: .5rem;
 }
 
@@ -817,8 +831,22 @@ footer {
         margin: 2rem auto 0 auto;
     }
 
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 3rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.2rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
     .dropdown .botao-drop {
         margin-top: 1rem;
+        font-size: 1.2rem;
     }
 
     .botao-drop:hover {
@@ -837,7 +865,7 @@ footer {
 }
 
 h2.titulo {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -969,9 +997,932 @@ footer {
 }
 
 @media screen and (min-width: 920px) and (max-width: 1200px) {
+    .link-topo > a p {
+        display: block;
+        font-size: 1rem;
+    }
 
+    .link-topo > a h3 {
+        color: white;
+        display: none;
+    }
+
+    .link-topo a i {
+        font-size: .6rem;
+        font-weight: 500;
+        color: #f3f7fae5;
+    }
+    
+    
+    .btn-topo .btn > i {
+        font-size: 1.2rem;
+        transition: .3s;
+    }
+
+    .fita-topo {
+        position: sticky;
+        top: 2.2rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 99;
+    }
+
+
+    .header .logo img {
+        width: 100%;
+        background:black;
+    }
+
+    .header .logo img {
+        width: 14rem;
+    }
+
+    #logo2 {
+        display: block;
+        position: relative;
+        top: 0;
+        right: -8rem;
+    }
+
+    .fita-azul {
+        position: relative;
+        top: -.2rem;
+        left: 0;
+    }
+
+    .fita-azul nav h1 {
+        color: white;
+        padding: 1rem;
+    }
+
+    #burguer {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+            /* Estilo do menu lateral */
+    #menu-lateral {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #004d99;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 10000;
+    }
+          
+    #menu-lateral a {
+        padding: 10px 8px 10px 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        display: block;
+        transition: .3s;
+    }
+          
+    #menu-lateral a:hover {
+        color: #f1f1f1;
+        background: rgba(255, 255, 255, 0.295);
+    }
+    
+    #menu-lateral.open {
+        width: 350px;
+    }
+    
+    #x {
+        position: relative;
+        top: -3.5rem;
+        left: 19rem;
+    }
+
+
+    .fita-azul {
+        position: sticky;
+        top: 2.4rem;
+        background: #00639c;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.692);
+        z-index: 98;
+    }
+    
+    
+
+
+    #menuGeral {
+       display: block;
+    }
+    
+
+    /* SLIDE */
+    div.nav-manual, div.nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 43%;
+        display: flex;
+        justify-content: center;
+    }
+        /* SLIDE FIM */
+
+    /* dropdown */
+    .dropdown {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 2rem auto 0 auto;
+    }
+
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 3rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.3rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
+    .dropdown .botao-drop {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .botao-drop:hover {
+        background: rgba(70, 70, 70, 0.301);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    }
+
+     /* dropdown FIM */
+
+     /* <!-- SECTION NOTÍCIA --> */
+
+
+.flex {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-@media screen and (min-width: 1200px) {
+h2.titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00639c;
+}
+
+section.especiliadades {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+}
+
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box img {
+    width: 18rem;
+    border-radius: .5rem;
+}
+
+.especiliadades .especialidades-box video {
+    width: 16rem;
+    border-radius: .5rem;
+}
+
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #004d9970;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 2.5rem;
+    color: #00FF08;
+}
+
+.especiliadades .especialidades-box a {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   font-size: 1rem;
+   background: #004d99;
+   color: #00FF08;
+   width: 0;
+   margin-top: 1rem;
+   transition: .5s;
+}
+
+
+.especiliadades .especialidades-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+
+/* <!-- SECTION NOTÍCIA FIM --> */
+
+
+    /* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #00639c;
+    padding: .5rem;
+}
+
+.institucional {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.institucional i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.contatos i {
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.endereco {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.endereco i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.autor {
+    background: #0073b6;
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .link-topo > a p {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .link-topo > a h3 {
+        color: white;
+        display: none;
+    }
+
+    .link-topo a i {
+        font-size: .6rem;
+        font-weight: 500;
+        color: #f3f7fae5;
+    }
     
+    
+    .btn-topo .btn > i {
+        font-size: 1.2rem;
+        transition: .3s;
+    }
+
+    .fita-topo {
+        position: sticky;
+        top: 2.2rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 99;
+    }
+
+
+    .header .logo img {
+        width: 100%;
+        background:blue;
+    }
+
+    .header .logo img {
+        width: 14rem;
+    }
+
+    #logo2 {
+        display: block;
+        position: relative;
+        top: 0;
+        right: -8rem;
+    }
+
+    .fita-azul {
+        position: relative;
+        top: -.2rem;
+        left: 0;
+    }
+
+    .fita-azul nav h1 {
+        color: white;
+        padding: 1rem;
+    }
+
+    #burguer {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+            /* Estilo do menu lateral */
+    #menu-lateral {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #004d99;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 10000;
+    }
+          
+    #menu-lateral a {
+        padding: 10px 8px 10px 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        display: block;
+        transition: .3s;
+    }
+          
+    #menu-lateral a:hover {
+        color: #f1f1f1;
+        background: rgba(255, 255, 255, 0.295);
+    }
+    
+    #menu-lateral.open {
+        width: 350px;
+    }
+    
+    #x {
+        position: relative;
+        top: -3.5rem;
+        left: 19rem;
+    }
+
+
+    .fita-azul {
+        position: sticky;
+        top: 2.4rem;
+        background: #00639c;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.692);
+        z-index: 98;
+    }
+    
+    
+
+
+    #menuGeral {
+       display: block;
+    }
+    
+
+    /* SLIDE */
+    div.nav-manual, div.nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 38%;
+        display: flex;
+        justify-content: center;
+    }
+        /* SLIDE FIM */
+
+    /* dropdown */
+    .dropdown {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 4rem auto 0 auto;
+    }
+
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 5rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.5rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
+    .dropdown .botao-drop {
+        margin-top: 1rem;
+    }
+
+    .botao-drop:hover {
+        background: rgba(70, 70, 70, 0.301);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    }
+
+     /* dropdown FIM */
+
+     /* <!-- SECTION NOTÍCIA --> */
+
+
+.flex {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h2.titulo {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00639c;
+}
+
+section.especiliadades {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+}
+
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box img {
+    width: 22rem;
+    border-radius: .5rem;
+}
+
+.especiliadades .especialidades-box video {
+    width: 20rem;
+    border-radius: .5rem;
+}
+
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #004d9970;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 2.5rem;
+    color: #00FF08;
+}
+
+.especiliadades .especialidades-box a {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   font-size: 1rem;
+   background: #004d99;
+   color: #00FF08;
+   width: 0;
+   margin-top: 1rem;
+   transition: .5s;
+}
+
+
+.especiliadades .especialidades-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+
+/* <!-- SECTION NOTÍCIA FIM --> */
+
+
+    /* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #00639c;
+    padding: .5rem;
+}
+
+.institucional {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.institucional i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.contatos i {
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.endereco {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.endereco i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.autor {
+    background: #0073b6;
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 1400px) {
+    .link-topo > a p {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .link-topo > a h3 {
+        color: white;
+        display: none;
+    }
+
+    .link-topo a i {
+        font-size: .6rem;
+        font-weight: 500;
+        color: #f3f7fae5;
+    }
+    
+    
+    .btn-topo .btn > i {
+        font-size: 1.2rem;
+        transition: .3s;
+    }
+
+    .fita-topo {
+        position: sticky;
+        top: 2.2rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 99;
+    }
+
+
+    .header .logo img {
+        width: 100%;
+        background:#313131;
+    }
+
+    .header .logo img {
+        width: 14rem;
+    }
+
+    #logo2 {
+        display: block;
+        position: relative;
+        top: 0;
+        right: -8rem;
+    }
+
+    .fita-azul {
+        position: relative;
+        top: -.2rem;
+        left: 0;
+    }
+
+    .fita-azul nav h1 {
+        color: white;
+        padding: 1rem;
+    }
+
+    #burguer {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+            /* Estilo do menu lateral */
+    #menu-lateral {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #004d99;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 10000;
+    }
+          
+    #menu-lateral a {
+        padding: 10px 8px 10px 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        display: block;
+        transition: .3s;
+    }
+          
+    #menu-lateral a:hover {
+        color: #f1f1f1;
+        background: rgba(255, 255, 255, 0.295);
+    }
+    
+    #menu-lateral.open {
+        width: 350px;
+    }
+    
+    #x {
+        position: relative;
+        top: -3.5rem;
+        left: 19rem;
+    }
+
+
+    .fita-azul {
+        position: sticky;
+        top: 2.4rem;
+        background: #00639c;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.692);
+        z-index: 98;
+    }
+    
+    
+
+
+    #menuGeral {
+       display: block;
+    }
+    
+
+    /* SLIDE */
+    div.nav-manual, div.nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 36%;
+        display: flex;
+        justify-content: center;
+    }
+        /* SLIDE FIM */
+
+    /* dropdown */
+    .dropdown {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 4rem auto 0 auto;
+    }
+
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 5rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.5rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
+    .dropdown .botao-drop {
+        margin-top: 1rem;
+    }
+
+    .botao-drop:hover {
+        background: rgba(70, 70, 70, 0.301);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    }
+
+     /* dropdown FIM */
+
+     /* <!-- SECTION NOTÍCIA --> */
+
+
+.flex {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h2.titulo {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00639c;
+}
+
+section.especiliadades {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+}
+
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box img {
+    width: 25rem;
+    border-radius: .5rem;
+}
+
+.especiliadades .especialidades-box video {
+    width: 20rem;
+    border-radius: .5rem;
+}
+
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #004d9970;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 2.5rem;
+    color: #00FF08;
+}
+
+.especiliadades .especialidades-box a {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   font-size: 1rem;
+   background: #004d99;
+   color: #00FF08;
+   width: 0;
+   margin-top: 1rem;
+   transition: .5s;
+}
+
+
+.especiliadades .especialidades-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+
+/* <!-- SECTION NOTÍCIA FIM --> */
+
+
+    /* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #00639c;
+    padding: .5rem;
+}
+
+.institucional {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.institucional i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.contatos i {
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.endereco {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+.endereco i {
+    font-size: .8rem;
+    margin: .2rem auto .2rem auto;
+}
+
+.autor {
+    background: #0073b6;
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+}
 }
