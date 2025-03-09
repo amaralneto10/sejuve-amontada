@@ -151,6 +151,19 @@
         margin: 2rem auto 0 auto;
     }
 
+    .titulo-dropdown h3 {
+        position: relative;
+        top: 3rem;
+        left: 0;
+        text-align: center;
+        color: var(--cor5);
+        font-size: 1.2rem;
+    }
+
+    .titulo-dropdown span {
+        color: #00639c;
+    }
+
     .dropdown .botao-drop {
         margin-top: 1rem;
         font-size: 1rem;
@@ -185,9 +198,9 @@
     }
     
     .fechar2{
-        position: absolute;
-        top: -10px;
-        right: -10px;
+        position: relative;
+        top: -3.5rem;
+        right: -14.2rem;
         width: 30px;
         height: 30px;
         border-radius: 50%;
