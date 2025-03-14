@@ -367,7 +367,7 @@ footer {
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .link-topo > a p {
         display: block;
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     .link-topo > a h3 {
@@ -683,7 +683,7 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 920px) {
     .link-topo > a p {
         display: block;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .link-topo > a h3 {
@@ -997,7 +997,7 @@ footer {
 @media screen and (min-width: 920px) and (max-width: 1200px) {
     .link-topo > a p {
         display: block;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .link-topo > a h3 {
@@ -1307,7 +1307,7 @@ footer {
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .link-topo > a p {
         display: block;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .link-topo > a h3 {
@@ -1616,7 +1616,7 @@ footer {
 @media screen and (min-width: 1400px) {
     .link-topo > a p {
         display: block;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .link-topo > a h3 {
